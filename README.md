@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Aravinth
 - 👀 I’m interested in Devops
 - 🌱 I’m currently learning Python
-- 📫 How to reach me aravinthanss16@gmail.com
+- 📫 Reach me via aravinthanss16@gmail.com
 
 
 <!---
