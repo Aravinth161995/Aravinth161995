@@ -1,7 +1,39 @@
 - 👋 Hi, I’m @Aravinth
-- 👀 I’m interested in Devops
-- 🌱 I’m currently learning Python
+- 👀 I’m interested in Cloud Security 
+- 🌱 I’m currently learning Linux foundational skills right now
 - 📫 Reach me via aravinthanss16@gmail.com
+
+- # Linux Home Lab 🐧
+
+A personal Linux practice lab set up using Oracle VirtualBox 
+running Kali Linux to build hands-on skills for a 
+cybersecurity career.
+
+## Lab Environment
+- **Virtualization:** Oracle VirtualBox
+- **OS:** Kali Linux
+- **Purpose:** Hands-on Linux practice for entry-level cybersecurity
+
+## Topics Practiced
+
+### 1. Basic Navigation
+- `pwd` — print current directory location
+- `ls` — list files and folders
+- `cd` — move between directories
+
+### 2. File Operations
+- `mv` — move files and folders
+- `cp` — copy files and folders
+- `mkdir` — create directories
+
+### 3. Searching Files with grep
+- `grep "value" filename` — search inside a single file
+- `grep -R "value" /folder/` — search recursively through folders
+- Used grep to search through log files for specific entries
+
+## Goal
+Building foundational Linux skills to pursue an 
+entry-level IT/Cybersecurity role.
 
 
 <!---
