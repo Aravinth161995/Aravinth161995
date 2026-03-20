@@ -1,31 +1,42 @@
-- # Linux Home Lab 🐧
+# Linux Home Lab 🐧
 
-A personal Linux practice lab set up using Oracle VirtualBox 
-running Kali Linux to build hands-on skills for a 
-cybersecurity career.
+Personal Linux practice lab using Oracle VirtualBox running Kali Linux for cybersecurity learning.
 
 ## Lab Environment
 - **Virtualization:** Oracle VirtualBox
 - **OS:** Kali Linux
 - **Purpose:** Hands-on Linux practice for entry-level cybersecurity
 
-## Topics Practiced
+## Commands Learned
 
-### 1. Basic Navigation
-- `pwd` — print current directory location
-- `ls` — list files and folders
-- `cd` — move between directories
+### User & System Info
+| Command | What it does |
+|---------|-------------|
+| `whoami` | Shows current logged in user |
+| `id` | Shows user ID and group details |
+| `groups` | Shows groups your user belongs to |
 
-### 2. File Operations
-- `mv` — move files and folders
-- `cp` — copy files and folders
-- `mkdir` — create directories
+### Navigation
+| Command | What it does |
+|---------|-------------|
+| `pwd` | Print current directory location |
+| `ls` | List files and folders |
+| `cd foldername` | Change into a directory |
+| `cd ..` | Go back one level |
 
-### 3. Searching Files with grep
-- `grep "value" filename` — search inside a single file
-- `grep -R "value" /folder/` — search recursively through folders
-- Used grep to search through log files for specific entries
+### File Operations
+| Command | What it does |
+|---------|-------------|
+| `cat filename` | Read contents of a file |
+| `touch filename` | Create a new empty file |
+| `find --name *.txt` | Find files by name/extension |
+
+### Searching
+| Command | What it does |
+|---------|-------------|
+| `echo "text"` | Print/repeat text in terminal |
+| `grep "value" filename` | Search inside a single file |
+| `grep -R "value" /folder/` | Search recursively through all files |
 
 ## Goal
-Building foundational Linux skills to pursue an 
-entry-level IT/Cybersecurity role.
+Building foundational Linux skills to pursue an entry-level IT/Cybersecurity role.
