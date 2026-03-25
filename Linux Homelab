@@ -10,33 +10,31 @@ Personal Linux practice lab using Oracle VirtualBox running Kali Linux for cyber
 ## Commands Learned
 
 ### User & System Info
-| Command | What it does |
-|---------|-------------|
 | `whoami` | Shows current logged in user |
 | `id` | Shows user ID and group details |
 | `groups` | Shows groups your user belongs to |
 
 ### Navigation
-| Command | What it does |
-|---------|-------------|
 | `pwd` | Print current directory location |
 | `ls` | List files and folders |
 | `cd foldername` | Change into a directory |
 | `cd ..` | Go back one level |
 
 ### File Operations
-| Command | What it does |
-|---------|-------------|
 | `cat filename` | Read contents of a file |
 | `touch filename` | Create a new empty file |
 | `find --name *.txt` | Find files by name/extension |
 
 ### Searching
-| Command | What it does |
-|---------|-------------|
 | `echo "text"` | Print/repeat text in terminal |
 | `grep "value" filename` | Search inside a single file |
 | `grep -R "value" /folder/` | Search recursively through all files |
 
+### File Viewing & Comparison
+- `cat` with flags (-n for line numbers)
+- `head` — view start of file (-n for lines, -c for bytes)
+- `tail` — view end of file (-n for lines, -c for bytes)  
+- `diff` — compare two files or folders (-r for recursive)
+
 ## Goal
-Building foundational Linux skills to pursue an entry-level IT/Cybersecurity role.
+Building foundational Linux skills to pursue an Cloud security role.
