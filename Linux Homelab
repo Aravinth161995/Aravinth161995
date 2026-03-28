@@ -36,5 +36,13 @@ Personal Linux practice lab using Oracle VirtualBox running Kali Linux for cyber
 - `tail` — view end of file (-n for lines, -c for bytes)  
 - `diff` — compare two files or folders (-r for recursive)
 
+### File Ownership & Permissions
+- `chown` — change file and directory ownership (owner:group)
+- `chown -R` — recursive ownership change for entire folders
+- `chmod` — change permissions using numeric (700, 755) notation
+- `chmod` — change permissions using symbolic (u+x, g-w) notation
+- Reading `ls -l` output — understanding permission strings
+- Shell script basics — shebang, .sh extension, execute permission
+
 ## Goal
 Building foundational Linux skills to pursue an Cloud security role.
