@@ -147,3 +147,84 @@ echo '#!/bin/bash\necho "Hello, World"' > script.sh
 | `.sh` | File extension for shell scripts |
 | `./script.sh` | Run the script from current directory |
 | `chmod u+x script.sh` | Give owner permission to execute it |
+
+## User Account Management
+
+### Creating Users
+| Command | What it does |
+|---------|-------------|
+| `sudo useradd joker` | Create a new user named joker (no home directory) |
+| `sudo useradd -m bob` | Create user bob WITH a home directory (-m flag) |
+
+---
+
+### Verifying Users
+| Command | What it does |
+|---------|-------------|
+| `sudo grep -w 'joker' /etc/passwd` | Check if user exists in passwd file |
+| `sudo ls -ld /home/bob` | Verify home directory was created |
+
+**Understanding /etc/passwd output:**
+```
+joker:x:5001:5001::/home/joker:/bin/sh
+  |   |   |     |       |          |
+  |   |   |     |       |          └── Default shell
+  |   |   |     |       └── Home directory
+  |   |   |     └── Group ID
+  |   |   └── User ID
+  |   └── Password (x = stored securely in /etc/shadow)
+  └── Username
+```
+
+---
+
+### Setting & Managing Passwords
+| Command | What it does |
+|---------|-------------|
+| `sudo passwd joker` | Set or change password for joker |
+| `sudo passwd -l joker` | Lock user account (-l = lock) |
+| `sudo passwd -u joker` | Unlock user account (-u = unlock) |
+
+> Note: Passwords are stored encrypted in `/etc/shadow` not in `/etc/passwd`
+
+---
+
+### Modifying User Properties
+| Command | What it does |
+|---------|-------------|
+| `sudo usermod -d /home/wayne joker` | Change home directory for joker |
+| `sudo usermod -s /bin/bash joker` | Change default shell to bash |
+| `sudo usermod -aG sudo joker` | Add joker to sudo group (-aG = append to Group) |
+
+---
+
+### Switching Users & Groups
+| Command | What it does |
+|---------|-------------|
+| `su - joker` | Switch to joker user account |
+| `groups joker` | Show all groups joker belongs to |
+| `exit` | Return to previous user account |
+
+---
+
+### Deleting Users
+| Command | What it does |
+|---------|-------------|
+| `sudo userdel -r bob` | Delete user bob AND their home directory (-r flag) |
+| `sudo grep -w 'bob' /etc/passwd` | Verify user was deleted |
+
+---
+
+### Understanding Shells
+| Shell | Meaning |
+|-------|---------|
+| `/bin/sh` | Bourne Shell — basic, present on all Unix systems |
+| `/bin/bash` | Bourne Again Shell — more features, user friendly |
+
+---
+
+### Why Use sudo Group?
+- Members use their own password (no need to share root password)
+- All sudo commands are logged — who ran what and when
+- More secure than giving everyone root access
+- Can restrict specific commands per user
