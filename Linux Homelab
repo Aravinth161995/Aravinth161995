@@ -44,5 +44,14 @@ Personal Linux practice lab using Oracle VirtualBox running Kali Linux for cyber
 - Reading `ls -l` output — understanding permission strings
 - Shell script basics — shebang, .sh extension, execute permission
 
+### User Account Management
+- `useradd` — create users with and without home directory
+- `passwd` — set, lock and unlock user passwords
+- `usermod` — modify home directory, shell, and group membership
+- `userdel` — delete users and their home directories
+- `su` — switch between user accounts
+- Understanding `/etc/passwd` and `/etc/shadow` files
+- Understanding sudo group and privilege management
+
 ## Goal
 Building foundational Linux skills to pursue an Cloud security role.
